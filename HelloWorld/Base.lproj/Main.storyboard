@@ -16,8 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3N9-SD-g5c">
-                                <rect key="frame" x="186" y="437.5" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3N9-SD-g5c">
+                                <rect key="frame" x="10" y="194" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSf-Ax-Ncq">
+                                <rect key="frame" x="10" y="291" width="394" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -26,11 +32,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="3N9-SD-g5c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4am-5e-tZR"/>
+                            <constraint firstItem="fSf-Ax-Ncq" firstAttribute="leading" secondItem="3N9-SD-g5c" secondAttribute="leading" id="4yj-BX-hmD"/>
+                            <constraint firstItem="3N9-SD-g5c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="57s-JU-R1W"/>
+                            <constraint firstItem="fSf-Ax-Ncq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H8P-fT-yqG"/>
                             <constraint firstItem="3N9-SD-g5c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M4A-Ed-cXU"/>
+                            <constraint firstItem="fSf-Ax-Ncq" firstAttribute="trailing" secondItem="3N9-SD-g5c" secondAttribute="trailing" id="NhJ-aT-GLR"/>
+                            <constraint firstItem="3N9-SD-g5c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="QKt-L6-CgJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3N9-SD-g5c" secondAttribute="trailing" constant="10" id="SJ7-Ud-dZj"/>
+                            <constraint firstItem="fSf-Ax-Ncq" firstAttribute="top" secondItem="3N9-SD-g5c" secondAttribute="bottom" constant="76" id="bhJ-AG-v9r"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="nowListenMusic" destination="fSf-Ax-Ncq" id="xY5-hF-wUN"/>
                         <outlet property="printLabel" destination="3N9-SD-g5c" id="EcE-I9-awh"/>
                     </connections>
                 </viewController>
